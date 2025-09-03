@@ -99,6 +99,7 @@ O foco principal é processar transações e identificar devoluções associadas
   ],
   "status": 1
 }
+```
 
 📡 Rotas Disponíveis
 
@@ -146,3 +147,4 @@ Rodar servidor: npm run dev
 Executar apenas os testes: npm run test:e2e
 
 Rodar servidor + testes em paralelo: npm run dev:test
+
