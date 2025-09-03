@@ -15,7 +15,7 @@ O foco principal é processar transações e identificar devoluções associadas
 ---
 
 ## 📂 Estrutura do Projeto
-
+```
 ├── scr
 │ ├── controller
 │ │ └── transactionsController.js # Controller da API
@@ -32,7 +32,7 @@ O foco principal é processar transações e identificar devoluções associadas
 ├── index.js # Inicialização do servidor
 ├── package.json
 └── README.md
-
+```
 
 ---
 
@@ -154,5 +154,6 @@ Rodar servidor: npm run dev
 Executar apenas os testes: npm run test:e2e
 
 Rodar servidor + testes em paralelo: npm run dev:test
+
 
 
