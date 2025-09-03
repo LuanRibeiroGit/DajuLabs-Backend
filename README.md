@@ -9,7 +9,7 @@ O foco principal é processar transações e identificar devoluções associadas
 
 - [Node.js](https://nodejs.org/)  
 - [Express](https://expressjs.com/)
-- [CORS](https://www.npmjs.com/package/cors) (para permitir requisições entre origens)   
+- [CORS](https://www.npmjs.com/package/cors)
 - [CSV-Parser](https://www.npmjs.com/package/csv-parser)  
 - [Playwright](https://playwright.dev/) (para testes E2E)
 
