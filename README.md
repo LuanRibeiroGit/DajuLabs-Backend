@@ -100,8 +100,9 @@ O foco principal é processar transações e identificar devoluções associadas
   "status": 1
 }
 ```
+---
 
-📡 Rotas Disponíveis
+## 📡 Rotas Disponíveis
 
 GET /transactions
 
@@ -111,7 +112,9 @@ Retorna as transações processadas do CSV.
 
 404 Not Found → Nenhum CSV disponível
 
-🧪 Testes
+---
+
+## 🧪 Testes
 
 Os testes foram feitos com Playwright no arquivo scr/e2e/csv.e2e.spec.js.
 Eles validam:
@@ -122,7 +125,9 @@ Se o JSON contém transações válidas.
 
 Se existe pelo menos uma transação sem devolução.
 
-▶️ Como Executar o Projeto
+---
+
+## ▶️ Como Executar o Projeto
 
 Instale as dependências:
 
@@ -140,11 +145,14 @@ Acesse a API em:
 
 http://localhost:4000/transactions
 
-⚡ Comandos Úteis
+---
+
+## ⚡ Comandos Úteis
 
 Rodar servidor: npm run dev
 
 Executar apenas os testes: npm run test:e2e
 
 Rodar servidor + testes em paralelo: npm run dev:test
+
 
