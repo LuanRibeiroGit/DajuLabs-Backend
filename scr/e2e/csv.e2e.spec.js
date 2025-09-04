@@ -1,8 +1,6 @@
 const { test, expect } = require('@playwright/test')
 
 
-
-
 test('Testando api transactions', async ({ request }) => {
     const response = await request.get('http://localhost:4000/transactions')
     expect(response.status()).toBe(200)
