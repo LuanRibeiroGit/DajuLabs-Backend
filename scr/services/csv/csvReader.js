@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const csv = require('csv-parser')
 
-const uploadFile = path.join(__dirname, '../../uploads')
+const uploadFile = path.join(__dirname, '../../../uploads')
 
 let dataSales = []
 

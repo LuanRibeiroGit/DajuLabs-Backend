@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-const { readCsv } = require('./scr/services/csvReader')
+const { readCsv } = require('./scr/services/csv/csvReader')
 
 const transactionsRoutes = require('./scr/routes/transactionsRouter')
 

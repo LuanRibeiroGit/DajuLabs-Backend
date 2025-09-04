@@ -1,8 +1,8 @@
 
 
-const TransactionOrganizer = require('../models/transactionsModels')
+const TransactionService = require('../services/transactions/transactionService')
 
-const  { getDataSales }  = require('../services/csvReader')
+const  { getDataSales }  = require('../services/csv/csvReader')
 
 async function transactions(req, res) {
     const data = await getDataSales()
@@ -10,10 +10,10 @@ async function transactions(req, res) {
         return res.status(404).json({ message: 'Nenhum arquivo CSV encontrado na pasta.', status: 0 })
     }
 
-    const organizer = new TransactionOrganizer(data)
+    const transactionManager = new TransactionService(data)
     const response = {
-        transactions: organizer.getTransactions(),
-        refundWithoutSales: organizer.getRefundsWithoutSales()
+        transactions: transactionManager.getTransactions(),
+        refundWithoutSales: transactionManager.getRefundsWithoutSales()
     }
     
     res.status(200).json({ ...response, status: 1 })
