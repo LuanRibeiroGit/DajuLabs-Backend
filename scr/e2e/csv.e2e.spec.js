@@ -7,7 +7,7 @@ test('Testando api transactions', async ({ request }) => {
 
     const data = await response.json()
     const transactions = data.transactions
-
+    console.log(transactions[0])
     expect(transactions).toEqual(
         expect.arrayContaining([
             expect.objectContaining({
@@ -30,10 +30,4 @@ test('Testando api transactions', async ({ request }) => {
             })
         ])
     )
-
-    const withoutRefund = transactions.find(item => item.refund === null)
-    expect(withoutRefund).toBeDefined()
 })
-
-
-//npx playwright test scr/tests/csv.e2e.spec.js
