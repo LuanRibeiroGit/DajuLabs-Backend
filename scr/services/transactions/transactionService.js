@@ -9,7 +9,7 @@ class TransactionService {
         const { sales, refunds } = separator.separate(data)
 
         this.matcher = new TransactionMatcher(sales, refunds)
-        this.orphanFinder = new RefundsWithoutSales(sales, refunds)
+        this.withoutSales = new RefundsWithoutSales(sales, refunds)
     }
 
     getTransactions() {
@@ -17,7 +17,7 @@ class TransactionService {
     }
 
     getRefundsWithoutSales() {
-        return this.orphanFinder.getRefundsWithoutSales()
+        return this.withoutSales.getRefundsWithoutSales()
     }
 }
 
