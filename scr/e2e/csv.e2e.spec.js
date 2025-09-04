@@ -7,7 +7,6 @@ test('Testando api transactions', async ({ request }) => {
 
     const data = await response.json()
     const transactions = data.transactions
-    console.log(transactions[0])
     expect(transactions).toEqual(
         expect.arrayContaining([
             expect.objectContaining({
